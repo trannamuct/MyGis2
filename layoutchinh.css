@@ -1,0 +1,130 @@
+html,body{
+    height: 100%;
+    width: 100%;
+   /*  background-color: antiquewhite */;
+    overflow-x: hidden; /* trục ngang */
+    overflow-y: hidden; /* trục đứng */
+    padding: 0;
+    margin: 0;
+}
+.style_header{
+    background-color: rgba(10, 26, 105, 0.908);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    height: 10%!important ;
+    color: rgb(49, 104, 153);
+}
+.cus_webname{
+    font-weight: bold;
+    color: #0f1975;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    z-index: 1000; /* Giá trị cao hơn bản đồ */
+    position: relative; /* Giữ vị trí tương đối để z-index có hiệu lực */
+}
+.cus_content{
+    height: 100% !important;
+    
+}
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #b3b3b3;
+    color: chartreuse;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(0, 53, 145);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: rgb(251, 251, 251);}
+  #News {background-color: rgb(237, 237, 237);}
+  #Contact {background-color: rgb(247, 247, 247);}
+  #About {background-color: rgb(246, 246, 246);}
+  .form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+ h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+.cus_btn_b{
+  width: 100px;
+}
+.cus_map{
+  height: 100%; 
+  margin: 0 !important;
+  padding: 0 !important; 
+  z-index: 1;
+}
+/* Tùy chỉnh kiểu chữ và màu sắc cho Base Layers */
+.leaflet-control-layers-base label {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #333; /* Màu chữ */
+}
+
+/* Tùy chỉnh kiểu chữ và màu sắc cho Overlays */
+.leaflet-control-layers-overlays label {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #007BFF; /* Màu chữ xanh dương */
+}
+
+/* Tùy chỉnh tiêu đề control panel (nếu có) */
+.leaflet-control-layers-expanded {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Tùy chỉnh tổng thể toàn bộ text */
+.leaflet-control-layers label {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #555;
+  text-align: left;
+}
+.container-sm, .container-fluid {
+  overflow: visible; /* Đảm bảo các thành phần không bị cắt */
+}
+
+.cus_map {
+  height: calc(100vh - 100px); /* Trừ đi chiều cao header nếu cần */
+  overflow: hidden;
+}
+#mymap {
+  height: 100vh; /* Chiều cao toàn màn hình */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.label_text{
+  text-align: start;
+}
